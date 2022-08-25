@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfracoesPorInfrator"
+    android:padding="48dp">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="32dp"/>
+
+    //Primeira infração da lista
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtIcone10"
+            android:layout_width="32dp"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text="$" />
+
+        <TextView
+            android:id="@+id/txtDescInfracao1"
+            android:layout_width="262dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="AVANÇAR O SINAL VERMELHO DO SEMAFORO - EXEC HOUVER SINALIZ PERM LIVRE CONV A DIREITA FISC ELETRONICA" />
+
+        <TextView
+            android:id="@+id/arrowButton1"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text=" > " />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtIcone11Fake"
+            android:layout_width="32dp"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtDetalhesInfracao1"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="16/01/2022 - 13:52 \n Placa: FTS2306 \n Auto de Infração: 100304090" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtIcone13Fake"
+            android:layout_width="32dp"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtValorDaInfracao1"
+            android:layout_width="262dp"
+            android:textStyle="bold"
+            android:textColor="#AA0606"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="R$ 293,47" />
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    //Segunda infração da lista
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtIcone20"
+            android:layout_width="32dp"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text="$" />
+
+        <TextView
+            android:id="@+id/txtDescInfracao2"
+            android:layout_width="262dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAllCaps="true"
+            android:layout_weight="1"
+            android:text="Transitar com o veículo em canteiros centrais/divisores de pista de rolamento" />
+
+        <TextView
+            android:id="@+id/arrowButton2"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text=" > " />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtIcone21Fake"
+            android:layout_width="32dp"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtDetalhesInfracao2"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="17/01/2022 - 03:33 \n Placa: XYZ9999 \n Auto de Infração: 58194" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtIcone23Fake"
+            android:layout_width="32dp"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtValorDaInfracao2"
+            android:layout_width="262dp"
+            android:textStyle="bold"
+            android:textColor="#AA0606"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="R$ 880,41" />
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    //Terceira infração da lista
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtIcone30"
+            android:layout_width="32dp"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text="$" />
+
+        <TextView
+            android:id="@+id/txtDescInfracao3"
+            android:layout_width="262dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAllCaps="true"
+            android:layout_weight="1"
+            android:text="Usar buzina prolongada e sucessivamente a qualquer pretexto" />
+
+        <TextView
+            android:id="@+id/arrowButton3"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text=" > " />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtIcone31Fake"
+            android:layout_width="32dp"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtDetalhesInfracao3"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="24/01/2022 - 05:29 \n Placa: ZYX9876 \n Auto de Infração: 64910" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtIcone33Fake"
+            android:layout_width="32dp"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtValorDaInfracao3"
+            android:layout_width="262dp"
+            android:textStyle="bold"
+            android:textColor="#AA0606"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="R$ 88,38" />
+
+    </TableRow>
+
+</TableLayout>
+
+
