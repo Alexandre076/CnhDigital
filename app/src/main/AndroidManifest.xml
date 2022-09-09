@@ -14,13 +14,16 @@
         android:theme="@style/Theme.CNHDigital"
         tools:targetApi="31">
         <activity
+            android:name=".DetalhesInfracaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastrarUsuarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".Pagamento"
-            android:exported="false" />
-        <activity
-            android:name=".PagamentoCodigoBarras"
-            android:exported="false" />
-        <activity
-            android:name=".PagamentoPorQrCode"
             android:exported="false" />
         <activity
             android:name=".InfracoesPorInfrator"

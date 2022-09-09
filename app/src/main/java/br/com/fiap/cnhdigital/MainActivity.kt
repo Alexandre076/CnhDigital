@@ -6,42 +6,40 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_main)
-        setContentView(R.layout.activity_infracoes_por_infrator)
+        setContentView(R.layout.activity_login)
+        //setContentView(R.layout.activity_infracoes_por_infrator)
 
-        var txtPrimeiraMulta = findViewById<TextView>(R.id.txtDescInfracao1);
-        var txtSegundaMulta = findViewById<TextView>(R.id.txtDescInfracao2);
+        //Ações da View Login Activity
+        //Instanciando botões da view
+        var buttonOk = findViewById<Button>(R.id.OkButton)
+        buttonOk.setOnClickListener {
 
-        var abrirPagamento = Intent(this, Pagamento::class.java)
+            //Instanciando uma intent para chamada da avtivity DetalhesInfracaoActivity
+            var intentAbrirInfracoesPorInfrator = Intent(this, InfracoesPorInfrator::class.java)
 
-        txtPrimeiraMulta.setOnClickListener{
-            startActivity(abrirPagamento)
+            //Chamando outra activity
+            startActivity(intentAbrirInfracoesPorInfrator)
         }
 
-        txtSegundaMulta.setOnClickListener{
-            startActivity(abrirPagamento)
+        var buttonCadastro = findViewById<Button>(R.id.CadastroButton)
+        buttonCadastro.setOnClickListener {
+
+            //Instanciando uma intent para chamada da avtivity CadastrarUsuarioActivity
+            var intentAbrirCadastrarUsuarioActivity = Intent(this, CadastrarUsuarioActivity::class.java)
+
+            //Chamando outra activity
+            startActivity(intentAbrirCadastrarUsuarioActivity)
         }
 
-    }
 
-    val positiveButtonClick = {dialog: DialogInterface, which: Int ->
 
-    }
 
-    fun alertaMulta(view: View){
-        var builder = AlertDialog.Builder(this)
-
-        with(builder){
-            setTitle("Pagamento")
-            setMessage("Pagamento não permitido por aplicativo! Por favor entre em contato pelo telefone: (11) 2222-2222")
-            setPositiveButton("OK", DialogInterface.OnClickListener(function = positiveButtonClick))
-            builder.show()
-
-        }
     }
 }
