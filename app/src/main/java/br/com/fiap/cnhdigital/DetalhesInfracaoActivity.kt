@@ -1,11 +1,16 @@
 package br.com.fiap.cnhdigital
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 
 class DetalhesInfracaoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalhes_infracao)
+
+
     }
 }

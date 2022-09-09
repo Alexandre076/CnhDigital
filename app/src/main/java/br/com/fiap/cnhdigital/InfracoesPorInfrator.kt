@@ -13,37 +13,17 @@ class InfracoesPorInfrator : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_infracoes_por_infrator)
 
-       /* var txtPrimeiraMulta = findViewById<TextView>(R.id.txtDescInfracao1);
-        var txtSegundaMulta = findViewById<TextView>(R.id.txtDescInfracao2);
+        //Ações da View DetalhesInfracaoActivity
+        //Instanciando botões da view
+        var textDetalheInfracao1 = findViewById<TextView>(R.id.txtDescInfracao1)
+        textDetalheInfracao1.setOnClickListener {
 
-        var abrirPagamento = Intent(this, Pagamento::class.java)
+            //Instanciando uma intent para chamada da avtivity DetalhesInfracaoActivity
+            var intentAbrirPagamento = Intent(this, Pagamento::class.java)
 
-        txtPrimeiraMulta.setOnClickListener{
-            startActivity(abrirPagamento)
+            //Chamando outra activity
+            startActivity(intentAbrirPagamento)
         }
-
-        txtSegundaMulta.setOnClickListener{
-            startActivity(abrirPagamento)
-        }
-
-    }
-
-    val positiveButtonClick = { dialog: DialogInterface, which: Int ->
-
-    }
-
-    fun alertaMulta(view: View){
-        var builder = AlertDialog.Builder(this)
-
-        with(builder){
-            setTitle("Pagamento")
-            setMessage("Pagamento não permitido por aplicativo! Por favor entre em contato pelo telefone: (11) 2222-2222")
-            setPositiveButton("OK", DialogInterface.OnClickListener(function = positiveButtonClick))
-            builder.show()
-
-        }
-
-        */
 
     }
 }

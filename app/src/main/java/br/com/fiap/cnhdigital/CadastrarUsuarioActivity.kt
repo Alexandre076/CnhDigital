@@ -21,7 +21,7 @@ class CadastrarUsuarioActivity : AppCompatActivity() {
             //Chamando outra activity
             startActivity(intentAbrirLoginActivity)
 
-            Toast.makeText(this, "Cadastro efetuado!\nRealize seu login agora.", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Cadastro efetuado!\nRealize seu login 😊.", Toast.LENGTH_LONG).show()
         }
     }
 }
